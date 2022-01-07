@@ -50,6 +50,10 @@ except $error$ as $error_var$:\
 .tryf : Wrap with try except and finally
 	ANY   →   try:\
     $expr$\
+
+.ae : use assertEqual function
+    ANY   →   self.assertEqual($expr$, $END$) 
+	
 except $error$ as $error_var$:\
     $except$\
 finally:\
